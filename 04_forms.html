@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Forms</h1>
+
+    <form>
+        <div>
+            <label for="text2">Text</label>
+            <input type="text" id="text2" value="Default text" readonly>
+        </div>
+
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email">
+        </div>
+
+        <div>
+            <label for="pswd">Password</label>
+            <input type="password" id="pswd">
+        </div>
+
+        <div>
+            <label for="num">Number</label>
+            <input type="number" id="num" min="0">
+        </div>
+
+
+        <div>
+            <label for="rng">Range</label>
+            <input type="range" id="rng" min="0" max="10" step="2">
+        </div>
+
+        <div>
+            <label for="date">Date</label>
+            <input type="date" id="date">
+        </div>
+
+        <div>
+            <label for="color">Color</label>
+            <input type="color" id="color">
+        </div>
+
+        <div>
+            <label for="message">Message</label>
+            <br>
+            <textarea id="message" cols="25" rows="5"></textarea>
+        </div>
+
+        <div>
+            <label for="sex">Your gender</label>
+            <select id="sex">
+                <option value="male">Male</option>
+                <option value="female" selected>Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+
+        <div>
+            <label>Number of works</label>
+            <input type="radio" name="work"> 1
+            <input type="radio" name="work"> 2
+            <input type="radio" name="work"> 5
+            <input type="radio" name="work"> 10+
+        </div>
+
+        <div>
+            <label>Favorite meal</label>
+            <input type="checkbox" name="food"> Sushi
+            <input type="checkbox" name="food"> Pasta
+            <input type="checkbox" name="food"> Pizza
+            <input type="checkbox" name="food"> Steak
+        </div>
+
+        <input type="submit" value="Submit form">
+        <button type="submit">Submit form</button>
+
+    </form>
+</body>
+</html>
