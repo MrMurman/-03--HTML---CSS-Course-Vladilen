@@ -8,35 +8,39 @@
     <title>Andrea The Great</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
-    <img src="profile_selfie.JPG" alt="Author's photo" width="200" />
+  <body class="container">
+    <div class="info">
+      <img src="profile_selfie.JPG" alt="Author's photo" class="avatar" />
 
-    <h1 class="my-name">Andrey Borodkin</h1>
-    <div class="info-text">
-      <p>
-        I am an aspiring frontend developer, trying to learn basics of
-        <strong>HTML</strong> ans <strong>CSS</strong> to get deeper in React
-        framework
-      </p>
+      <div class="box">
+        <h1 class="my-name">Andrey Borodkin</h1>
+        <div class="info-text">
+          <p>
+            I am an aspiring frontend developer, trying to learn basics of
+            <strong>HTML</strong> ans <strong>CSS</strong> to get deeper in
+            React framework
+          </p>
 
-      <p>
-        As a hobby I like working out in a <strong><em>gym</em></strong>
-      </p>
+          <p>
+            As a hobby I like working out in a <strong><em>gym</em></strong>
+          </p>
+        </div>
+        <p><strong>Social medias:</strong></p>
+        <p>
+          <a href="https://google.com" target="_blank"
+            >Placeholder for a social media link</a
+          >
+          <!-- Should add real social links -->
+        </p>
+      </div>
     </div>
-    <p><strong>Social medias:</strong></p>
-    <p>
-      <a href="https://google.com" target="_blank"
-        >Placeholder for a social media link</a
-      >
-      <!-- Should add real social links -->
-    </p>
 
     <hr />
 
     <div class="card hobbies">
       <h2>My hobbies</h2>
 
-      <ol>
+      <ol class="list">
         <li>Technologies</li>
         <li>iOS development</li>
         <li>Gym</li>
@@ -44,7 +48,6 @@
       </ol>
     </div>
 
-    <hr />
     <div class="card work">
       <h2>Work experience</h2>
 
@@ -81,28 +84,43 @@
       </table>
     </div>
 
-    <hr />
-    <div class="contact">
-      <h2>Get in touch with me</h2>
+    <div class="card contact">
+      <form action="" class="form">
+        <h2>Get in touch with me</h2>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name" class="label">Your name</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter your name"
+              class="input"
+            />
+          </div>
 
-      <form action="">
-        <div>
-          <label for="name">Your name</label>
-          <input type="text" id="name" placeholder="Enter your name" />
+          <div class="form-group">
+            <label for="email" class="label">Your email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+              class="input"
+            />
+          </div>
         </div>
 
-        <div>
-          <label for="email">Your email</label>
-          <input type="email" id="email" placeholder="Enter your email" />
+        <div class="form-group">
+          <label for="message" class="label">Enter your message</label>
+          <textarea
+            name=""
+            id="message"
+            cols="20"
+            rows="5"
+            class="textarea"
+          ></textarea>
         </div>
 
-        <div>
-          <label for="message">Enter your message</label>
-          <br />
-          <textarea name="" id="message" cols="20" rows="5"></textarea>
-        </div>
-
-        <button type="submit">Send!</button>
+        <button type="submit" class="btn">Send!</button>
       </form>
     </div>
   </body>
