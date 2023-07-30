@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site
+    </title>
+    <style>
+        .header {
+            border-bottom: 2px solid grey;
+        }
+
+        .card {
+            background-color: #eee;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .color {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header" class="header">
+        <h1>Site</h1>
+    </header>
+<!-- div -> header // Really no diff in terms of func. But better semantics -->
+    <nav id="nagigation">
+        <ul>
+            <li> <a href="#">Item 1</a></li>
+            <li> <a href="#">Item 2</a></li>
+            <li> <a href="#">Item 2</a></li>
+        </ul>
+
+    </nav>
+<!-- div -> nav // same here -->
+    <hr>
+
+    <section>
+        <article id="block1" class="card header">
+            <h2>Block 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <div class="color" style="border: 2px solid blue;">Aliquam quod voluptatibus assumenda ex voluptate molestiae
+                voluptas deleniti eius tempora esse</div>.
+            </p>
+        </article>
+
+        <article id="block2" class="card">
+            <h2>Block 2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <span class="color" style="border: 2px solid blue;">Aliquam quod voluptatibus assumenda ex voluptate molestiae
+                voluptas deleniti eius tempora esse</span>.
+            </p>
+        </article>
+    </section>
+
+    <!-- div-> article but also can be grouped in section  -->
+
+    <hr>
+
+    <footer id="footer">
+        <h4>Contact me</h4>
+        <ul>
+            <li>Instagram</li>
+            <li>Telegram</li>
+            <li>Youtube</li>
+        </ul>
+    </footer>
+
+    <aside></aside>
+    <!-- aside is also div but used for side bars -->
+
+    <!-- div -> footer -->
+
+    <div class=""></div>
+    <!-- div. -->
+
+    <span class=""></span>
+    <!-- span. -->
+
+    <div id=""></div>
+    <!-- div# -->
+
+    <ul class="list"></ul>
+    <!-- ul.class -->
+
+</body>
+</html>
+
+<!-- to cut the story short, classes are used to implement CSS, id's -- to separate unique stuff -->
