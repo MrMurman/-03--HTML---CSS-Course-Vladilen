@@ -1,95 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="portfolio">
-    <meta name="description" content="This is my portfolio piece">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="portfolio" />
+    <meta name="description" content="This is my portfolio piece" />
     <title>Andrea The Great</title>
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <img src="profile_selfie.JPG" alt="Author's photo" width="200" />
 
-    <img src="profile_selfie.JPG" alt="Author's photo" width="200">
+    <h1 class="my-name">Andrey Borodkin</h1>
+    <div class="info-text">
+      <p>
+        I am an aspiring frontend developer, trying to learn basics of
+        <strong>HTML</strong> ans <strong>CSS</strong> to get deeper in React
+        framework
+      </p>
 
-    <h1>Andrey Borodkin</h1>
-    <p>I am an aspiring frontend developer, 
-        trying to learn basics of <strong>HTML</strong> ans <strong>CSS</strong> to
-         get deeper in React framework</p>
+      <p>
+        As a hobby I like working out in a <strong><em>gym</em></strong>
+      </p>
+    </div>
+    <p><strong>Social medias:</strong></p>
+    <p>
+      <a href="https://google.com" target="_blank"
+        >Placeholder for a social media link</a
+      >
+      <!-- Should add real social links -->
+    </p>
 
-    <p>As a hobby I like working out in a <strong><em>gym</em></strong></p>
+    <hr />
 
-    <p><strong>Social medias:</strong><p>
-    <a href="https://google.com" target="_blank">Placeholder for a social media link</a>
-<!-- Should add real social links -->
-    
-<hr>
-<h2>My hobbies</h2>
+    <div class="card hobbies">
+      <h2>My hobbies</h2>
 
-<ol>
-    <li>Technologies</li>
-    <li>iOS development</li>
-    <li>Gym</li>
-    <li>Eating</li>
-</ol>
+      <ol>
+        <li>Technologies</li>
+        <li>iOS development</li>
+        <li>Gym</li>
+        <li>Eating</li>
+      </ol>
+    </div>
 
+    <hr />
+    <div class="card work">
+      <h2>Work experience</h2>
 
-<hr>
-<h2>Work experience</h2>
-
-<table>
-    <thead>
-        <tr>
+      <table>
+        <thead>
+          <tr>
             <th>Employer</th>
             <th>Position</th>
             <th>Year</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
             <td>PGU-TEZ Rybinsk LLC</td>
             <td>Economist</td>
             <td>2012-2019</td>
-        </tr>
-        <tr>
+          </tr>
+          <tr>
             <td>Mosenergo PJSC</td>
             <td>Economist</td>
             <td>2019-2021</td>
-        </tr>
-        <tr>
+          </tr>
+          <tr>
             <td>Accenture LLC</td>
             <td>CFM Senior Analyst</td>
             <td>2021-2023</td>
-        </tr>
-        <tr>
+          </tr>
+          <tr>
             <td>Axenix LLC</td>
             <td>Frontend developer</td>
             <td>2023-nowadays</td>
-        </tr>
-    </tbody>
-</table>
-
-<hr>
-<h2>Get in touch with me</h2>
-
-<form action="">
-    <div>
-        <label for="name">Your name</label>
-        <input type="text" id="name" placeholder="Enter your name">
+          </tr>
+        </tbody>
+      </table>
     </div>
 
-    <div>
-        <label for="email">Your email</label>
-        <input type="email" id="email" placeholder="Enter your email">
+    <hr />
+    <div class="contact">
+      <h2>Get in touch with me</h2>
+
+      <form action="">
+        <div>
+          <label for="name">Your name</label>
+          <input type="text" id="name" placeholder="Enter your name" />
+        </div>
+
+        <div>
+          <label for="email">Your email</label>
+          <input type="email" id="email" placeholder="Enter your email" />
+        </div>
+
+        <div>
+          <label for="message">Enter your message</label>
+          <br />
+          <textarea name="" id="message" cols="20" rows="5"></textarea>
+        </div>
+
+        <button type="submit">Send!</button>
+      </form>
     </div>
-
-    <div>
-        <label for="message">Enter your message</label>
-        <br>
-        <textarea name="" id="message" cols="20" rows="5"></textarea>
-    </div>
-
-    <button type="submit">Send!</button>
-</form>
-
-</body>
+  </body>
 </html>
